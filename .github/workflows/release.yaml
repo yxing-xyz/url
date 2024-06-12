@@ -42,13 +42,12 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           bash scripts/url.sh
-          mkdir -p static
-          cd static
+          mkdir -p build && cd build
           rm -rf ./* || true
           rm -rf ./.* || true
           mv ../url.txt .
-          git init --initial-branch static
+          git init --initial-branch build
           # git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/yxing-xyz/url.git
           git add -A
           git commit -m 'github action'
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/yxing-xyz/url.git static:static -u -f
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/yxing-xyz/url.git build:build -u -f

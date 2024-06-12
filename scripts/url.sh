@@ -13,10 +13,6 @@ docker run -dit --name code --hostname code --restart always \\
     -p 22:22 -p 80:80 -p 443:443 -p 8080:8080 \\
     -v /data:/data \\
     ccr.ccs.tencentyun.com/yxing-xyz/linux:ubuntu-devel bash -c "mkdir /run/sshd && /usr/sbin/sshd -D"
-storage:
-https://github.com/yxing-xyz/storage/raw/main/static/userdata.7z
-https://github.com/yxing-xyz/storage/raw/main/static/alpine.tar.gz
-
 EOF
 echo >>./url.txt
 
@@ -34,6 +30,7 @@ RepoLatestRelease() {
     echo >>./url.txt
     echo >>./url.txt
 }
+RepoLatestRelease yxing-xyz url
 RepoLatestRelease trzsz trzsz-go
 RepoLatestRelease derailed k9s
 RepoLatestRelease jesseduffield lazygit
