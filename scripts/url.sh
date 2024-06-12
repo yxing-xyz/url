@@ -15,7 +15,6 @@ docker run -dit --name code --hostname code --restart always \\
     ccr.ccs.tencentyun.com/yxing-xyz/linux:ubuntu-devel bash -c "mkdir /run/sshd && /usr/sbin/sshd -D"
 EOF
 echo >>./url.txt
-
 RepoLatestRelease() {
     owner=$1
     repo=$2
@@ -30,11 +29,12 @@ RepoLatestRelease() {
     echo >>./url.txt
     echo >>./url.txt
 }
+
 RepoLatestRelease yxing-xyz url
 RepoLatestRelease trzsz trzsz-go
 RepoLatestRelease derailed k9s
 RepoLatestRelease jesseduffield lazygit
-RepoLatestRelease jesseduffield lazydocker
 RepoLatestRelease tsenart vegeta
 RepoLatestRelease FiloSottile mkcert
 RepoLatestRelease version-fox vfox
+RepoLatestRelease jesseduffield lazydocker
