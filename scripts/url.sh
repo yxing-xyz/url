@@ -38,3 +38,4 @@ RepoLatestRelease tsenart vegeta
 RepoLatestRelease FiloSottile mkcert
 RepoLatestRelease version-fox vfox
 RepoLatestRelease jesseduffield lazydocker
+RepoLatestRelease v2rayA v2rayA
