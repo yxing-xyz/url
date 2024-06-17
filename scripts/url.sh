@@ -12,7 +12,7 @@ docker run -dit --name code --hostname code --restart always \\
     --privileged --pull always --platform linux/amd64 \\
     -p 22:22 -p 80:80 -p 443:443 -p 8080:8080 \\
     -v /data:/data \\
-    ccr.ccs.tencentyun.com/yxing-xyz/linux:ubuntu-devel bash -c "mkdir /run/sshd && /usr/sbin/sshd -D"
+    registry.cn-hangzhou.aliyuncs.com/yxing-xyz/linux:ubuntu-devel bash -c "mkdir /run/sshd && /usr/sbin/sshd -D"
 EOF
 echo >>./url.txt
 RepoLatestRelease() {
