@@ -20,22 +20,28 @@ RepoLatestRelease() {
     repo=$2
     list=$(curl -s https://api.github.com/repos/${owner}/${repo}/releases/latest | grep browser_download_url)
     array=($(echo "$list" | grep -Eo "\"https://.+\""))
-    echo "$repo:" >>./url.txt
     for element in ${array[@]}; do
         element=${element:1}
         element=${element%?}
-        echo "$element" >>./url.txt
+        echo "$element"
     done
-    echo >>./url.txt
-    echo >>./url.txt
 }
 
-RepoLatestRelease yxing-xyz url
-RepoLatestRelease trzsz trzsz-go
-RepoLatestRelease derailed k9s
-RepoLatestRelease jesseduffield lazygit
-RepoLatestRelease tsenart vegeta
-RepoLatestRelease FiloSottile mkcert
-RepoLatestRelease version-fox vfox
-RepoLatestRelease jesseduffield lazydocker
-RepoLatestRelease v2rayA v2rayA
+githubReleaseURL() {
+    owner=$1
+    repo=$2
+    filepath="${owner}-${repo}.txt"
+    content="$(RepoLatestRelease "${owner}" "${repo}" )"
+    echo "$content" >> "$filepath"
+    printf "%s\n\n" "$filepath" >> url.txt
+}
+githubReleaseURL yxing-xyz url
+githubReleaseURL trzsz trzsz-go
+githubReleaseURL derailed k9s
+githubReleaseURL jesseduffield lazygit
+githubReleaseURL tsenart vegeta
+githubReleaseURL FiloSottile mkcert
+githubReleaseURL version-fox vfox
+githubReleaseURL jesseduffield lazydocker
+githubReleaseURL v2fly v2ray-core
+githubReleaseURL v2rayA v2rayA

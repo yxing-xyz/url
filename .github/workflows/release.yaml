@@ -45,7 +45,7 @@ jobs:
           mkdir -p build && cd build
           rm -rf ./* || true
           rm -rf ./.* || true
-          mv ../url.txt .
+          mv ../*.txt .
           git init --initial-branch build
           # git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/yxing-xyz/url.git
           git add -A
