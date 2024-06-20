@@ -108,3 +108,19 @@ func FileMD5(filePath string) (string, error) {
 
 	return MD5String, nil
 }
+
+func IsRegularFile(filePath string) (bool, error) {
+	// 使用os.Stat获取文件信息
+	info, err := os.Stat(filePath)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return false, nil
+		} else {
+			return false, err
+		}
+	}
+	if !info.Mode().IsRegular() {
+		return false, fmt.Errorf("%s is directory", filePath)
+	}
+	return true, nil
+}
