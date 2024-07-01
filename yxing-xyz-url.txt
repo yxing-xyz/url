@@ -1,0 +1,2 @@
+https://github.com/yxing-xyz/url/releases/download/static/alpine.tar.xz
+https://github.com/yxing-xyz/url/releases/download/static/userdata.7z

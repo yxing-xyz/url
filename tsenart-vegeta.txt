@@ -1,0 +1,17 @@
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_checksums.txt
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_checksums.txt.asc
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_darwin_amd64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_darwin_arm64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_freebsd_386.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_freebsd_amd64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_freebsd_arm.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_linux_386.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_linux_amd64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_linux_arm.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_linux_arm64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_openbsd_amd64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_openbsd_arm64.tar.gz
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_pubkey.asc
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_windows_386.zip
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_windows_amd64.zip
+https://github.com/tsenart/vegeta/releases/download/v12.11.1/vegeta_12.11.1_windows_arm64.zip
